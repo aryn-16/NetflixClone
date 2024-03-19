@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix.com-clone</title>
-    <link rel="stylesheet" href="netflix-style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,17 +19,6 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      .movie-card {
-        /* display: none; */
-        /* position: absolute; */
-        /* top: 0%; */
-        /* bottom: 0%; */
-        /* right: 0%; */
-        background-color: #141414;
-        transform: translate(50%, -50%);
-        z-index: 999; /* Ensure movie card is on top */
-      }
-
       /* You can add more styling for movie-card and its contents as needed */
     </style>
   </head>
@@ -95,8 +84,79 @@
       </div>
     </section>
     <section id="page-2">
-      <div class="movies">
-        <p>My List</p>
+      <div class="movies" style="position: relative">
+        <p style="margin-left: 50px">My List</p>
+        <div class="movie-card">
+          <div class="img-container">
+            <img src="images/aryan1.jpg" class="movie-image" />
+          </div>
+          <div class="movie-detail">
+            <div class="action-buttons">
+              <div>
+                <button class="action-btn">
+                  <i class="fa-solid fa-circle-play"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+              </div>
+              <button class="action-btn">
+                <i class="fa-solid fa-circle-chevron-down"></i>
+              </button>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 18px">
+              <div style="color: #46d36a">
+                <span>96% match</span>
+              </div>
+              <div>
+                <span
+                  style="
+                    border: 1px solid gray;
+                    padding: 2px;
+                    padding-right: 8px;
+                    padding-left: 8px;
+                    color: #bcbcbc;
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                  "
+                  >A</span
+                >
+              </div>
+              <div>
+                <span style="color: #bcbcbc">3 Seasons</span>
+              </div>
+              <div>
+                <span
+                  style="
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    font-size: smaller;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                  "
+                  >HD</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 16px;
+              "
+            >
+              <span style="gap: 5px">Sci-Fi TV</span>
+
+              <span>Mind-Bending</span>
+
+              <span>Chilling</span>
+            </div>
+          </div>
+        </div>
         <div class="movie-list">
           <div class="movie">
             <div class="movie-bg">
@@ -104,255 +164,46 @@
                 <img src="./images/aryan1.jpg" class="img" alt="" />
               </div>
             </div>
-            <div class="movie-card">
+          </div>
+          <div class="movie">
+            <div class="movie-bg">
               <div class="img-container">
-                <img src="images/aryan1.jpg" class="movie-image" />
+                <img src="./images/aryan1.jpg" class="img" alt="" />
               </div>
-              <div class="movie-detail">
-                <div class="action-buttons">
-                  <div>
-                    <button class="action-btn">
-                      <i class="fa-solid fa-circle-play"></i>
-                    </button>
-                    <button class="action-btn">
-                      <i class="fa-solid fa-circle-plus"></i>
-                    </button>
-                    <button class="action-btn">
-                      <i class="fa-solid fa-thumbs-up"></i>
-                    </button>
-                  </div>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-circle-chevron-down"></i>
-                  </button>
-                </div>
-                <div style="display: flex; gap: 8px; margin-bottom: 18px">
-                  <div style="color: #46d36a">
-                    <span>96% match</span>
-                  </div>
-                  <div>
-                    <span
-                      style="
-                        border: 1px solid gray;
-                        padding: 2px;
-                        padding-right: 8px;
-                        padding-left: 8px;
-                        color: #bcbcbc;
-                        padding-top: 1px;
-                        padding-bottom: 1px;
-                      "
-                      >A</span
-                    >
-                  </div>
-                  <div>
-                    <span style="color: #bcbcbc">3 Seasons</span>
-                  </div>
-                  <div>
-                    <span
-                      style="
-                        border: 1px solid gray;
-                        border-radius: 5px;
-                        font-size: smaller;
-                        padding-left: 5px;
-                        padding-right: 5px;
-                      "
-                      >HD</span
-                    >
-                  </div>
-                </div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 16px;
-                  "
-                >
-                  <span style="gap: 5px">Sci-Fi TV</span>
-                  <!-- <span
-                          ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                        ></span> -->
-                  <span>Mind-Bending</span>
-                  <!-- <span
-                          ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                        ></span> -->
-                  <span>Chilling</span>
-                </div>
+            </div>
+          </div>
+          <div class="movie">
+            <div class="movie-bg">
+              <div class="img-container">
+                <img src="./images/aryan1.jpg" class="img" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="movie">
+            <div class="movie-bg">
+              <div class="img-container">
+                <img src="./images/aryan1.jpg" class="img" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="movie">
+            <div class="movie-bg">
+              <div class="img-container">
+                <img src="./images/aryan1.jpg" class="img" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="movie">
+            <div class="movie-bg">
+              <div class="img-container">
+                <img src="./images/aryan1.jpg" class="img" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div class="movie">
-          <div class="movie-bg">
-            <div class="img-container">
-              <img src="./images/aryan1.jpg" class="img" alt="" />
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="img-container">
-              <img src="images/aryan1.jpg" class="movie-image" />
-            </div>
-            <div class="movie-detail">
-              <div class="action-buttons">
-                <div>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-circle-play"></i>
-                  </button>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-circle-plus"></i>
-                  </button>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                  </button>
-                </div>
-                <button class="action-btn">
-                  <i class="fa-solid fa-circle-chevron-down"></i>
-                </button>
-              </div>
-              <div style="display: flex; gap: 8px; margin-bottom: 18px">
-                <div style="color: #46d36a">
-                  <span>96% match</span>
-                </div>
-                <div>
-                  <span
-                    style="
-                      border: 1px solid gray;
-                      padding: 2px;
-                      padding-right: 8px;
-                      padding-left: 8px;
-                      color: #bcbcbc;
-                      padding-top: 1px;
-                      padding-bottom: 1px;
-                    "
-                    >A</span
-                  >
-                </div>
-                <div>
-                  <span style="color: #bcbcbc">3 Seasons</span>
-                </div>
-                <div>
-                  <span
-                    style="
-                      border: 1px solid gray;
-                      border-radius: 5px;
-                      font-size: smaller;
-                      padding-left: 5px;
-                      padding-right: 5px;
-                    "
-                    >HD</span
-                  >
-                </div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 5px;
-                  font-size: 16px;
-                "
-              >
-                <span style="gap: 5px">Sci-Fi TV</span>
-                <!-- <span
-                              ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                            ></span> -->
-                <span>Mind-Bending</span>
-                <!-- <span
-                              ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                            ></span> -->
-                <span>Chilling</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="movie">
-          <div class="movie-bg">
-            <div class="img-container">
-              <img src="./images/aryan1.jpg" class="img" alt="" />
-            </div>
-          </div>
-          <div class="movie-card">
-            <div class="img-container">
-              <img src="images/aryan1.jpg" class="movie-image" />
-            </div>
-            <div class="movie-detail">
-              <div class="action-buttons">
-                <div>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-circle-play"></i>
-                  </button>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-circle-plus"></i>
-                  </button>
-                  <button class="action-btn">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                  </button>
-                </div>
-                <button class="action-btn">
-                  <i class="fa-solid fa-circle-chevron-down"></i>
-                </button>
-              </div>
-              <div style="display: flex; gap: 8px; margin-bottom: 18px">
-                <div style="color: #46d36a">
-                  <span>96% match</span>
-                </div>
-                <div>
-                  <span
-                    style="
-                      border: 1px solid gray;
-                      padding: 2px;
-                      padding-right: 8px;
-                      padding-left: 8px;
-                      color: #bcbcbc;
-                      padding-top: 1px;
-                      padding-bottom: 1px;
-                    "
-                    >A</span
-                  >
-                </div>
-                <div>
-                  <span style="color: #bcbcbc">3 Seasons</span>
-                </div>
-                <div>
-                  <span
-                    style="
-                      border: 1px solid gray;
-                      border-radius: 5px;
-                      font-size: smaller;
-                      padding-left: 5px;
-                      padding-right: 5px;
-                    "
-                    >HD</span
-                  >
-                </div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 5px;
-                  font-size: 16px;
-                "
-              >
-                <span style="gap: 5px">Sci-Fi TV</span>
-                <!-- <span
-                              ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                            ></span> -->
-                <span>Mind-Bending</span>
-                <!-- <span
-                              ><i class="fa-solid fa-circle" style="font-size: 3px"></i
-                            ></span> -->
-                <span>Chilling</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- <footer class="netflix-footer">
          <div class="container">
             <div class="footer-links">
@@ -396,31 +247,87 @@
          </div>
       </footer> -->
     <script>
-      const movieBg = document.querySelector(".movie-bg");
-      const movieCard = document.querySelector(".movie-card");
+      // const movieBg = document.querySelector(".movie-bg");
+      // const movieCard = document.querySelector(".movie-card");
+      // function showMovieCard() {
+      //   movieCard.style.display = "block";
+      //   movieBg.removeEventListener("mousemove", showMovieCard);
+      // }
+      // function hideMovieCard() {
+      //   movieCard.style.display = "none";
+      //   movieBg.addEventListener("mousemove", showMovieCard);
+      // }
+      // movieCard.style.display = "none";
+      // movieBg.addEventListener("mouseenter", showMovieCard);
+      // movieCard.addEventListener("mouseleave", hideMovieCard);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all movie elements
+        const movies = [
+          {
+            title: "Aryan 1",
+            image: "images/aryan1.jpg",
+            match: "96% match",
+            rating: "A",
+            seasons: "3 Seasons",
+            quality: "HD",
+            genres: ["Sci-Fi TV", "Mind-Bending", "Chilling"],
+          },
+          {
+            title: "Aryan 2",
+            image: "images/aryan2.jpg",
+            match: "90% match",
+            rating: "B",
+            seasons: "2 Seasons",
+            quality: "SD",
+            genres: ["Drama", "Mystery"],
+          },
+          // Add more movies as needed
+        ];
 
-      // Define the function to show the movie c
-      function showMovieCard() {
-        movieCard.style.display = "block";
-        // Remove the mousemove event listener to disable it temporarily
-        movieBg.removeEventListener("mousemove", showMovieCard);
-      }
+        const movieElements = document.querySelectorAll(".movie-bg");
 
-      // Define the function to hide the movie card
-      function hideMovieCard() {
-        movieCard.style.display = "none";
-        // Add back the mousemove event listener when hiding the movie card
-        movieBg.addEventListener("mousemove", showMovieCard);
-      }
+        movies.forEach((movie, index) => {
+          // Add hover event listener to each movie element
+          movieElements[index].addEventListener("mouseover", () => {
+            // Populate movie card with details from the corresponding movie object
+            document.getElementById("card-img").src = movie.image;
+            document.querySelector(".movie-detail .img-container img").alt =
+              movie.title;
+            document.querySelector(
+              ".movie-detail .action-buttons span"
+            ).textContent = movie.match;
+            document.querySelector(
+              ".movie-detail .action-buttons div:nth-child(2) span"
+            ).textContent = movie.rating;
+            document.querySelector(
+              ".movie-detail .action-buttons div:nth-child(3) span"
+            ).textContent = movie.seasons;
+            document.querySelector(
+              ".movie-detail .action-buttons div:nth-child(4) span"
+            ).textContent = movie.quality;
 
-      // Initially hide the movie card
-      movieCard.style.display = "none";
+            const genresContainer = document.querySelector(
+              ".movie-detail div:last-child"
+            );
+            genresContainer.innerHTML = "";
+            movie.genres.forEach((genre) => {
+              const span = document.createElement("span");
+              span.textContent = genre;
+              genresContainer.appendChild(span);
+            });
 
-      // Add event listener for mouseenter
-      movieBg.addEventListener("mouseenter", showMovieCard);
+            // Show movie detail card
+            document.querySelector(".movie-card").style.display = "block";
+          });
 
-      // Add event listener for mouseleave
-      movieCard.addEventListener("mouseleave", hideMovieCard);
+          // Add mouseout event listener to hide movie detail card when mouse leaves movie
+          movieElements[index].addEventListener("mouseout", () => {
+            document.querySelector(".movie-card").style.display = "none";
+          });
+        });
+      });
     </script>
   </body>
 </html>

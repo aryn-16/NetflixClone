@@ -115,9 +115,30 @@ nav a:hover{
     display: flex !important;
     gap: 8px;
     cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 .movie-detail{
     padding: 15px;
+}
+.movie-card {
+    /* display: none; */
+    position: absolute;
+    /* top: 0%; */
+    bottom: 5%;
+    transition: 0.5s;
+    /* right: 0%; */
+    transform: scale(0.8);
+    opacity: 0;
+    background-color: #141414;
+    /* transform: translate(50%, -50%); */
+    z-index: 999;
+  }
+
+.movie-card:hover{
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.5s;
 }
 .img-container{
     overflow: hidden;
@@ -131,7 +152,7 @@ nav a:hover{
 #page-2{
     color: white;
     font-size: large;
-    margin-left: 50px;   
+    /* margin-left: 50px;    */
 }
 .action-buttons{
     display: flex;
