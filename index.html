@@ -1,333 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix.com-clone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      /* You can add more styling for movie-card and its contents as needed */
-    </style>
-  </head>
-  <body style="font-family: Poppins">
-    <nav>
-      <div style="display: flex; align-items: center; gap: 20px">
-        <div class="logo-contain" style="margin-right: 20px">
-          <img
-            class="nav-logo"
-            src="images/netflix.svg"
-            alt="Netflix"
-            style="width: 90px"
-          />
-        </div>
-        <a href="#">Home</a>
-        <a href="#">TV Shows</a>
-        <a href="#">Movies</a>
-        <a href="#">New & Popular</a>
-        <a href="#">My List</a>
-        <a href="#">Browse by Language</a>
-      </div>
-      <div style="display: flex; gap: 25px; margin-right: 50px">
-        <i
-          class="fa-solid fa-magnifying-glass"
-          style="color: white; font-size: larger"
-        ></i>
-        <a href="#">Children</a>
-        <i class="fa-regular fa-bell" style="color: white"></i>
-        <div style="display: flex; gap: 10px">
-          <i class="fa-solid fa-user" style="color: white"></i>
-          <i
-            class="fa-solid fa-sort-down"
-            style="color: white; font-size: small"
-          ></i>
-        </div>
-      </div>
-    </nav>
-    <section id="Home">
-      <video id="video-background" autoplay muted loop>
-        <source
-          src="images/Stranger Things 4 ｜ Sneak Peek ｜ Netflix.mp4"
-          type="video/mp4"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netflix.com-clone</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
         />
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-info">
-        <img
-          class="video-logo"
-          src="images/Stranger_things_logo_PNG1.png"
-          alt="Stranger_things_logo"
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
-        <div class="btns">
-          <div>
-            <button class="play-button">
-              <i class="fa-solid fa-play"></i> Play
-            </button>
-            <button class="more-info-button">
-              <i class="fa-solid fa-circle-info"></i>&nbsp;More Info
-            </button>
-          </div>
-          <button class="rating-button">13+</button>
-        </div>
-      </div>
-    </section>
-    <section id="page-2">
-      <div class="movies" style="position: relative">
-        <p style="margin-left: 50px">My List</p>
-        <div class="movie-card">
-          <div class="img-container">
-            <img src="images/aryan1.jpg" class="movie-image" />
-          </div>
-          <div class="movie-detail">
-            <div class="action-buttons">
-              <div>
-                <button class="action-btn">
-                  <i class="fa-solid fa-circle-play"></i>
-                </button>
-                <button class="action-btn">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </button>
-                <button class="action-btn">
-                  <i class="fa-solid fa-thumbs-up"></i>
-                </button>
-              </div>
-              <button class="action-btn">
-                <i class="fa-solid fa-circle-chevron-down"></i>
-              </button>
+        <style>
+            /* You can add more styling for movie-card and its contents as needed */
+        </style>
+    </head>
+    <body style="font-family: Poppins">
+        <nav>
+            <div style="display: flex; align-items: center; gap: 20px">
+                <div class="logo-contain" style="margin-right: 20px">
+                    <img
+                        class="nav-logo"
+                        src="images/netflix.svg"
+                        alt="Netflix"
+                        style="width: 90px"
+                    />
+                </div>
+                <a href="#">Home</a>
+                <a href="#">TV Shows</a>
+                <a href="#">Movies</a>
+                <a href="#">New & Popular</a>
+                <a href="#">My List</a>
+                <a href="#">Browse by Language</a>
             </div>
-            <div style="display: flex; gap: 8px; margin-bottom: 18px">
-              <div style="color: #46d36a">
-                <span>96% match</span>
-              </div>
-              <div>
-                <span
-                  style="
-                    border: 1px solid gray;
-                    padding: 2px;
-                    padding-right: 8px;
-                    padding-left: 8px;
-                    color: #bcbcbc;
-                    padding-top: 1px;
-                    padding-bottom: 1px;
-                  "
-                  >A</span
-                >
-              </div>
-              <div>
-                <span style="color: #bcbcbc">3 Seasons</span>
-              </div>
-              <div>
-                <span
-                  style="
-                    border: 1px solid gray;
-                    border-radius: 5px;
-                    font-size: smaller;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                  "
-                  >HD</span
-                >
-              </div>
+            <div style="display: flex; gap: 25px; margin-right: 50px">
+                <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: white; font-size: larger"
+                ></i>
+                <a href="#">Children</a>
+                <i class="fa-regular fa-bell" style="color: white"></i>
+                <div style="display: flex; gap: 10px">
+                    <i class="fa-solid fa-user" style="color: white"></i>
+                    <i
+                        class="fa-solid fa-sort-down"
+                        style="color: white; font-size: small"
+                    ></i>
+                </div>
             </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                font-size: 16px;
-              "
-            >
-              <span style="gap: 5px">Sci-Fi TV</span>
+        </nav>
+        <section id="Home">
+            <video id="video-background" autoplay muted loop>
+                <source
+                    src="images/Stranger Things 4 ｜ Sneak Peek ｜ Netflix.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <img
+                    class="video-logo"
+                    src="images/Stranger_things_logo_PNG1.png"
+                    alt="Stranger_things_logo"
+                />
+                <div class="btns">
+                    <div>
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i> Play
+                        </button>
+                        <button class="more-info-button">
+                            <i class="fa-solid fa-circle-info"></i>&nbsp;More
+                            Info
+                        </button>
+                    </div>
+                    <button class="rating-button">13+</button>
+                </div>
+            </div>
+        </section>
+        <section id="page-2">
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip1-title"></p>
+                <div id="strip1" class="movie-list"></div>
+            </div>
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip1-title"></p>
+                <div id="strip1" class="movie-list"></div>
+            </div>
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip2-title"></p>
+                <div id="strip2" class="movie-list"></div>
+            </div>
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip3-title"></p>
+                <div id="strip3" class="movie-list"></div>
+            </div>
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip4-title"></p>
+                <div id="strip4" class="movie-list"></div>
+            </div>
+            <div class="movies" style="position: relative">
+                <p style="margin-left: 50px" id="strip5-title"></p>
+                <div id="strip5" class="movie-list"></div>
+            </div>
+        </section>
 
-              <span>Mind-Bending</span>
+        <footer class="netflix-footer">
+            <div class="container">
+                <div class="footer-links">
+                    <div class="footer-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div style="display: flex; gap: 150px; font-size: small">
+                        <div>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Account</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Account</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Account</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        style="
+                            border: 1px solid gray;
+                            font-size: small;
+                            padding: 5px 5px;
+                            width: fit-content;
+                        "
+                    >
+                        Service Code
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-              <span>Chilling</span>
-            </div>
-          </div>
-        </div>
-        <div class="movie-list">
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="movie">
-            <div class="movie-bg">
-              <div class="img-container">
-                <img src="./images/aryan1.jpg" class="img" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <script>
+            const divs = ["strip1", "strip2", "strip3", "strip4", "strip5"];
+            const stripTitle = [
+                "Popular on Netflix",
+                "Trending Now",
+                "Top 10 in India",
+                "New Releases",
+                "Watch It Again",
+            ];
+            const match = [
+                "96% match",
+                "98% match",
+                "95% match",
+                "97% match",
+                "99% match",
+                "88% match",
+                "90% match",
+                "92% match",
+                "94% match",
+                "91% match",
+                "93% match",
+                "89% match",
+                "87% match",
+                "85% match",
+                "86% match",
+                "84% match",
+                "83% match",
+                "82% match",
+                "81% match",
+                "80% match",
+            ];
+            const typeRating = ["A", "U", "U/A", "A/U", "A/U", "18+", "16+"];
+            const seasons = [
+                "3 Seasons",
+                "2 Seasons",
+                "1 Season",
+                "4 Seasons",
+                "5 Seasons",
+            ];
+            const quality = ["HD", "4K", "8K"];
+            const genre = [
+                "Sci-Fi TV",
+                "Action TV",
+                "Adventure TV",
+                "Comedy TV",
+                "Drama TV",
+                "Horror TV",
+                "Romance TV",
+                "Thriller TV",
+                "Crime TV",
+                "Mystery TV",
+                "Fantasy TV",
+                "Animation TV",
+                "Family TV",
+                "Documentary TV",
+                "Reality TV",
+                "Kids TV",
+                "Anime TV",
+                "Science & Nature TV",
+                "Talk Show TV",
+                "Stand-Up & Talk TV",
+            ];
+            for (let i = 0; i < 5; i++) {
+                const movieDiv = document.getElementById(divs[i]);
+                for (let j = 0; j < 20; j++) {
+                    const randNo = Math.floor(Math.random() * 21) + 1;
 
-    <!-- <footer class="netflix-footer">
-         <div class="container">
-            <div class="footer-links">
-               <div class="footer-social">
-                  <i class="fa-brands fa-facebook-f"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-               </div>
-               <div style="display: flex; gap: 150px;font-size: small;">
-                  <div>
-                     <ul>
-                     <li><a href="#">FAQ</a></li>
-                     <li><a href="#">Help Center</a></li>
-                     <li><a href="#">Account</a></li>
-                     </ul>
-                  </div>
-                  <div>
-                     <ul>
-                     <li><a href="#">FAQ</a></li>
-                     <li><a href="#">Help Center</a></li>
-                     <li><a href="#">Account</a></li>
-                  </div>
-                  <div>
-                     <ul>
-                     <li><a href="#">FAQ</a></li>
-                     <li><a href="#">Help Center</a></li>
-                     <li><a href="#">Account</a></li>
-                  </div>
-                  <div>
-                     <ul>
-                     <li><a href="#">FAQ</a></li>
-                     <li><a href="#">Help Center</a></li>
-                     <li><a href="#">Account</a></li>
-                  </div>
-               </div>
-               <div style="border: 1px solid gray; font-size: small; padding: 5px 5px; width: fit-content;">
-                  Service Code
-               </div>
-            </div>
-         </div>
-      </footer> -->
-    <script>
-      // const movieBg = document.querySelector(".movie-bg");
-      // const movieCard = document.querySelector(".movie-card");
-      // function showMovieCard() {
-      //   movieCard.style.display = "block";
-      //   movieBg.removeEventListener("mousemove", showMovieCard);
-      // }
-      // function hideMovieCard() {
-      //   movieCard.style.display = "none";
-      //   movieBg.addEventListener("mousemove", showMovieCard);
-      // }
-      // movieCard.style.display = "none";
-      // movieBg.addEventListener("mouseenter", showMovieCard);
-      // movieCard.addEventListener("mouseleave", hideMovieCard);
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Get all movie elements
-        const movies = [
-          {
-            title: "Aryan 1",
-            image: "images/aryan1.jpg",
-            match: "96% match",
-            rating: "A",
-            seasons: "3 Seasons",
-            quality: "HD",
-            genres: ["Sci-Fi TV", "Mind-Bending", "Chilling"],
-          },
-          {
-            title: "Aryan 2",
-            image: "images/aryan2.jpg",
-            match: "90% match",
-            rating: "B",
-            seasons: "2 Seasons",
-            quality: "SD",
-            genres: ["Drama", "Mystery"],
-          },
-          // Add more movies as needed
-        ];
-
-        const movieElements = document.querySelectorAll(".movie-bg");
-
-        movies.forEach((movie, index) => {
-          // Add hover event listener to each movie element
-          movieElements[index].addEventListener("mouseover", () => {
-            // Populate movie card with details from the corresponding movie object
-            document.getElementById("card-img").src = movie.image;
-            document.querySelector(".movie-detail .img-container img").alt =
-              movie.title;
-            document.querySelector(
-              ".movie-detail .action-buttons span"
-            ).textContent = movie.match;
-            document.querySelector(
-              ".movie-detail .action-buttons div:nth-child(2) span"
-            ).textContent = movie.rating;
-            document.querySelector(
-              ".movie-detail .action-buttons div:nth-child(3) span"
-            ).textContent = movie.seasons;
-            document.querySelector(
-              ".movie-detail .action-buttons div:nth-child(4) span"
-            ).textContent = movie.quality;
-
-            const genresContainer = document.querySelector(
-              ".movie-detail div:last-child"
-            );
-            genresContainer.innerHTML = "";
-            movie.genres.forEach((genre) => {
-              const span = document.createElement("span");
-              span.textContent = genre;
-              genresContainer.appendChild(span);
-            });
-
-            // Show movie detail card
-            document.querySelector(".movie-card").style.display = "block";
-          });
-
-          // Add mouseout event listener to hide movie detail card when mouse leaves movie
-          movieElements[index].addEventListener("mouseout", () => {
-            document.querySelector(".movie-card").style.display = "none";
-          });
-        });
-      });
-    </script>
-  </body>
+                    const randMatch =
+                        match[Math.floor(Math.random() * match.length)];
+                    const randTypeRating =
+                        typeRating[
+                            Math.floor(Math.random() * typeRating.length)
+                        ];
+                    const randSeasons =
+                        seasons[Math.floor(Math.random() * seasons.length)];
+                    const randQuality =
+                        quality[Math.floor(Math.random() * quality.length)];
+                    let randGenre = "";
+                    for (let k = 0; k < 3; k++) {
+                        randGenre +=
+                            genre[Math.floor(Math.random() * genre.length)];
+                        if (k < 2) {
+                            randGenre +=
+                                "<i class='fa-solid fa-circle' style='font-size:5px;color:gray'></i> ";
+                        }
+                    }
+                    const movie = `<div class="movie">
+                        <div class="movie-bg">
+                            <div class="img-container">
+                                <img
+                                    src="./images/aryan${randNo}.jpg"
+                                    class="img"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="img-container">
+                                <img
+                                    src="images/aryan${randNo}.jpg"
+                                    class="movie-image"
+                                />
+                            </div>
+                            <div class="movie-detail">
+                                <div class="action-buttons">
+                                    <div>
+                                        <button class="action-btn">
+                                            <i
+                                                class="fa-solid fa-circle-play"
+                                            ></i>
+                                        </button>
+                                        <button class="action-btn">
+                                            <i
+                                                class="fa-solid fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                        <button class="action-btn">
+                                            <i
+                                                class="fa-solid fa-thumbs-up"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                    <button class="action-btn">
+                                        <i
+                                            class="fa-solid fa-circle-chevron-down"
+                                        ></i>
+                                    </button>
+                                </div>
+                                <div
+                                    style="
+                                        display: flex;
+                                        gap: 8px;
+                                        margin-bottom: 18px;
+                                    "
+                                >
+                                    <div style="color: #46d36a">
+                                        <span>${randMatch}</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            style="
+                                                border: 1px solid gray;
+                                                padding: 2px;
+                                                padding-right: 8px;
+                                                padding-left: 8px;
+                                                color: #bcbcbc;
+                                                padding-top: 1px;
+                                                padding-bottom: 1px;
+                                            "
+                                            >${randTypeRating}</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <span style="color: #bcbcbc"
+                                            >${randSeasons}</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <span
+                                            style="
+                                                border: 1px solid gray;
+                                                border-radius: 5px;
+                                                font-size: smaller;
+                                                padding-left: 5px;
+                                                padding-right: 5px;
+                                            "
+                                            >${randQuality}</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        font-size: 16px;
+                                    "
+                                >
+                                    ${randGenre}
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    movieDiv.innerHTML += movie;
+                }
+                const title = document.getElementById(`strip${i + 1}-title`);
+                title.innerHTML = stripTitle[i];
+            }
+        </script>
+    </body>
 </html>
